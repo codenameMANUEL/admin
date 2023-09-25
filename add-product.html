@@ -71,7 +71,11 @@
             </div>
             <div class="row tm-edit-product-row">
               <div class="col-xl-6 col-lg-6 col-md-12">
-                <form action="" class="tm-edit-product-form">
+                <form 
+                  action="https://e-commerce-0r6p.onrender.com/products" 
+                  method="post" 
+                  enctype="multipart/form-data"
+                  class="tm-edit-product-form">
                   <div class="form-group mb-3">
                     <label
                       for="name"
@@ -79,7 +83,7 @@
                     </label>
                     <input
                       id="name"
-                      name="name"
+                      name="title"
                       type="text"
                       value=""
                       placeholder="Enter product title"
@@ -93,7 +97,7 @@
                     </label>
                     <input
                       id="name"
-                      name="name"
+                      name="productId"
                       type="text"
                       placeholder="Enter Product ID"
                       class="form-control validate"
@@ -109,6 +113,7 @@
                       class="form-control validate"
                       placeholder="Enter Product Description"
                       rows="3"
+                      name="desc"
                       required
                     ></textarea>
                   </div>
@@ -120,7 +125,7 @@
                         </label>
                         <input
                           id=""
-                          name=""
+                          name="old_price"
                           type="text"
                           class="form-control validate"
                           data-large-mode="true"
@@ -133,7 +138,7 @@
                         </label>
                         <input
                           id=""
-                          name=""
+                          name="price"
                           type="text"
                           class="form-control validate"
                           data-large-mode="true"
@@ -150,7 +155,7 @@
                   ></i>
                 </div>
                 <div class="custom-file mt-3 mb-3">
-                  <input id="fileInput" type="file" style="display:none;" />
+                  <input id="fileInput" type="file" name="avatar" />
                   <input
                     type="button"
                     class="btn btn-primary btn-block mx-auto"
@@ -170,15 +175,9 @@
     </div>
 
     <script src="js/jquery-3.3.1.min.js"></script>
-    <!-- https://jquery.com/download/ -->
-    <script src="jquery-ui-datepicker/jquery-ui.min.js"></script>
     <!-- https://jqueryui.com/download/ -->
     <script src="js/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
-    <script>
-      $(function() {
-        $("#expire_date").datepicker();
-      });
-    </script>
+    <script src="js/main.js"></script>r
   </body>
 </html>

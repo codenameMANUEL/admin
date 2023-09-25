@@ -363,7 +363,7 @@ thead {
   vertical-align: middle;
 }
 .tm-table-small td,
-.tm-table-small th {
+.tm-table-small th{
   padding-left: 40px;
   padding-right: 25px;
 }
