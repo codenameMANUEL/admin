@@ -97,6 +97,10 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- https://getbootstrap.com/ -->
     <script>
+       if(!localStorage.getItem("active")){
+          localStorage.setItem("active","1")
+        location.href="/products.html"
+       }
       $(function() {
         $(".tm-product-name").on("click", function() {
           window.location.href = "edit-product.html";
